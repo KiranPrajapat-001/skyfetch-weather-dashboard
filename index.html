@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyFetch - Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>🌤️ SkyFetch</h1>
+        <p class="tagline">Your Personal Weather Dashboard</p>
+
+        <!-- Search Section -->
+        <div class="search-section">
+
+    <div class="search-box">
+        <input 
+            type="text" 
+            id="city-input" 
+            placeholder="Enter city name..."
+            autocomplete="off"
+        >
+
+        <button id="search-btn">
+            Search
+        </button>
+    </div>
+
+    <div id="recent-searches-section" class="recent-section">
+        <div class="recent-header">
+            <h4>Recent Searches</h4>
+            <button id="clear-history-btn">Clear</button>
+        </div>
+
+        <div id="recent-searches-container"></div>
+    </div>
+
+</div>
+
+
+        <!-- Weather Display -->
+        <div id="weather-display">
+            <p class="loading">Loading weather data...</p>
+        </div>
+
+    </div>
+
+    <!-- Axios CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <!-- Your JavaScript -->
+    <script src="app.js"></script>
+
+</body>
+</html>
