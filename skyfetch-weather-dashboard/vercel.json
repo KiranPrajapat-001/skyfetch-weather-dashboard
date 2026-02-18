@@ -1,0 +1,5 @@
+{
+  "routes": [
+    { "src": "/", "dest": "/skyfetch-weather-dashboard/index.html" }
+  ]
+}
